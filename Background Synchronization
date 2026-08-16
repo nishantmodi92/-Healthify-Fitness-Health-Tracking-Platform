@@ -1,0 +1,40 @@
+ Background Synchronization
+
+WorkManager
+     ↓
+Sync Worker
+     ↓
+Repository
+     ↓
+Google Fit
+     ↓
+Room
+     ↓
+Flow
+     ↓
+Compose
+
+
+Dependency Injection
+Hilt manages:
+
+Database
+DAO
+Repository
+Fitness Data Source
+UseCases
+ViewModels
+
+Example dependency direction:
+Application
+    ↓
+Hilt
+ ┌──┼───────────────┐
+ ▼  ▼               ▼
+Room Fitness     Repository
+ │    │               │
+ ▼    ▼               ▼
+DAO  DataSource     UseCase
+                       │
+                       ▼
+                   ViewModel
