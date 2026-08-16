@@ -1,0 +1,46 @@
+ Presentation Layer
+feature/
+├── dashboard/
+├── activity/
+├── insights/
+└── profile/
+
+Contains:
+
+Compose screens
+ViewModels
+UI state
+UI events
+Navigation
+
+The presentation layer does not directly communicate with Google Fit or Room.
+
+
+ Domain Layer
+
+domain/
+├── model/
+├── repository/
+└── usecase/
+
+Example use cases:
+GetDailyActivity
+GetActivityHistory
+CalculateFitnessSummary
+GetFitnessInsights
+SynchronizeFitnessData
+
+
+Data Layer
+data/
+├── local/
+├── fitness/
+├── repository/
+└── synchronization/
+
+Responsibilities:
+
+Local persistence
+Fitness provider integration
+Repository implementations
+Synchronization
