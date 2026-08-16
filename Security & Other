@@ -1,0 +1,32 @@
+Security
+
+The application follows least-privilege principles.
+
+Only required fitness permissions should be requested.
+
+Sensitive configuration must remain outside source control.
+
+Performance
+
+Performance-sensitive operations are executed away from the main thread.
+
+Main Thread
+ ├── Compose
+ └── State
+
+Background
+ ├── Room
+ ├── Fitness API
+ ├── Synchronization
+ └── Data Processing
+
+Architecture Principles
+
+Single Responsibility
+Separation of Concerns
+Dependency Inversion
+Repository abstraction
+Unidirectional data flow
+Reactive state
+Local persistence
+Lifecycle-aware background work
