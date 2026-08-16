@@ -1,0 +1,21 @@
+Summary
+
+Compose
+   ↓
+ViewModel
+   ↓
+UseCase
+   ↓
+Repository
+   ↓
+┌──────────────┐
+│              │
+▼              ▼
+Room        Google Fit
+│              │
+└──────┬───────┘
+       ▼
+   Domain Model
+       │
+       ▼
+       UI
