@@ -1,0 +1,49 @@
+Google Fit Integration
+
+Fitness UseCase
+       ↓
+Fitness Repository
+       ↓
+Fitness Data Source
+       ↓
+Google Fit
+
+Provider-specific details remain isolated.
+
+Local Data Architecture
+
+Repository
+    ↓
+DAO
+    ↓
+Room
+    ↓
+Entity
+
+The UI observes local data using Flow.
+
+Complete Data Flow
+Google Fit
+     │
+     ▼
+Fitness Data Source
+     │
+     ▼
+Repository
+     │
+     ├──────────► Room
+     │              │
+     │              ▼
+     │           Local Data
+     │
+     ▼
+ Domain Model
+     │
+     ▼
+ UseCase
+     │
+     ▼
+ ViewModel
+     │
+     ▼
+ Compose UI
